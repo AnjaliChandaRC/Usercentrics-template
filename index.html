@@ -24,8 +24,14 @@
       display: inline-grid !important;
     }
 
-    .sendlinger_color {
+    .color_black {
       color: #010101 !important;
+    }
+    .toggle_display{
+      display: none;
+    }
+    .display_toggle{
+      display: block;
     }
 
     @media (max-width: 575.99px) {
@@ -158,7 +164,15 @@
       .button_padding{
         padding: 12px 15px !important;
       }
-    
+    .toggle_display{
+      display: block;
+    }
+    .display_toggle{
+      display: none !important;
+    }
+    .fs_12{
+      font-size: 12px !important;
+    }
     }
   </style>
 </head>
@@ -186,7 +200,7 @@
                           <img class="logo_width" src="https://i.ibb.co/mD7wwFc/T-UC-Master-Logo-Logo-Blk-On-Blu-1.png"
                             alt="Usercentrics-logo" width="241" style="line-height: 0" />
                         </td>
-                        <td style="text-align:end;"><a href="" target="_blank" class="fs_12" style="font-weight: 500; font-size: 14px; line-height: 117%; color: black; text-decoration: underline;padding-bottom: 4px;">View in your Browser <img width="20" src="https://i.postimg.cc/MGW4DRXz/nav-arrow-icon.png" alt="nav-arrow-icon.png" style="padding-left: 8px; vertical-align: bottom;" class="arrow_width pl_0"></a>
+                        <td style="text-align:end;"><a href="" target="_blank" class="fs_12" style="font-weight: 500; font-size: 14px; line-height: 117%; color: black; padding-bottom: 3px; border-bottom: solid 1px black; text-decoration: none;">View in your Browser <img width="20" src="https://i.postimg.cc/MGW4DRXz/nav-arrow-icon.png" alt="nav-arrow-icon.png" style="padding-left: 8px; vertical-align: bottom;" class="arrow_width pl_0"></a>
                         </td>
                       </tr>
                     </table>
@@ -538,7 +552,7 @@
                                     color: #010101;
                                     padding-bottom: 20px;
                                     text-align: center;
-                                  " class="fs_19 pb_13">
+                                  " class="fs_12 pb_13">
                                         From 10:00 am to 12:00 pm
                                       </p>
                                     </td>
@@ -580,14 +594,14 @@
                 </tbody>
                 </table>
                 <!-- Your Key Takeaways from the Webinar -->
-              <table  cellpadding="0" cellspacing="0" border="0" style=" width: 100% ;max-width: 650px; background-color: white;">
+              <table  cellpadding="0" cellspacing="0" border="0" style=" width: 100% ;max-width: 650px; background-image: url(https://i.postimg.cc/brqV0V8y/white-bg.png);">
                 <tbody>
                     <tr>
                   <td style="width: 100%; padding: 40px 94px 40px 60px" class="p_20">
                     <table cellpadding="0" cellspacing="0" border="0" style="
                           max-width: 520px;
                           margin: 0 auto;
-                          background-color: white;
+                          background-image: url(https://i.postimg.cc/brqV0V8y/white-bg.png);
                         ">
                       <tr>
                         <td>
@@ -608,7 +622,7 @@
                             <tr class="d_inline_grid">
                               <td style="width: 100%">
                                 <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
-                                  <td class="text_center">
+                                  <td class="text_center" style="vertical-align: top;">
                                     <img src="https://i.ibb.co/Bq5wN79/Group-10.png" alt="lock" width="40" />
                                   </td>
                                   <td style="padding-left: 16px; width: 100%">
@@ -651,7 +665,7 @@
                             <tr>
                               <td style="width: 100%">
                                 <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
-                                  <td>
+                                  <td style="vertical-align: top;">
                                     <img src="https://i.ibb.co/C5RDY9Q/Group-11.png" alt="diary" width="40" />
                                   </td>
                                   <td style="padding-left: 16px; width: 100%">
@@ -695,7 +709,7 @@
                             <tr>
                               <td style="width: 100%">
                                 <table cellpadding="0" cellspacing="0" border="0" style="width: 100%">
-                                  <td>
+                                  <td style="vertical-align: top;">
                                     <img src="https://i.ibb.co/9psmqzS/Group-11-1.png" alt="hand=-image" width="40" />
                                   </td>
                                   <td style="padding-left: 16px; width: 100%">
@@ -918,11 +932,8 @@
               <a href="#" class="inline_grid"><img src="https://i.postimg.cc/gj4z4RPR/map-img.png" alt="location" width="24"></a>
             </td>
             <td style="padding-left: 4px; text-align: left;">
-              <!-- <a href="https://google.com/maps/place/Sendlinger+Str.+7,+80331+M%C3%BCnchen,+Germany/@48.1358248,11.5719344,17z/data=!3m1!4b1!4m6!3m5!1s0x479e75f56fc03473:0xfe47ebfa23b8868b!8m2!3d48.1358248!4d11.5719344!16s%2Fg%2F11c5bwl040?entry=ttu&g_ep=EgoyMDI0MDgyMC4xIKXMDSoASAFQAw%3D%3D" 
-                 style="">
-                
-              </a> -->
-              <p style="text-decoration: none; font-weight: 400; font-size: 14px; line-height: 150%; color: #010101; text-align: left;">Sendlinger Straße 7, 80331 Munich, Germany</p>
+              <p class="color_black display_toggle" style="text-decoration: none; font-weight: 400; font-size: 14px; line-height: 150%; text-align: left; ">Sendlinger Straße 7, 80331 Munich, Germany</p>
+              <a href="" class="toggle_display" style="text-decoration: none; font-weight: 400; font-size: 14px; line-height: 150%; text-align: left ; color: #010101;">Sendlinger Straße 7, 80331 Munich, Germany </a>
             </td>
           </tr>
         </table>
