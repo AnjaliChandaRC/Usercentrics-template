@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      color: #000000;
+    }
+    .email-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+    h1, p {
+      margin: 0 0 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Dark Mode Styles */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: yellow;
+        color: red;
+      }
+      .email-container {
+        background-color: yellow;
+      }
+      h1, p {
+        color: red;
+      }
+      .btn {
+        background-color: #1e90ff;
+      }
+    }
+
+    /* Light Mode Styles (for redundancy) */
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: yellow;
+        color: red;
+      }
+      .email-container {
+        background-color: yellow;
+      }
+      h1, p {
+        color: red;
+      }
+      .btn {
+        background-color: #007bff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <h1>Hello, Customer!</h1>
+    <p>We're excited to share our latest updates with you. Here's a quick overview of what we've been working on.</p>
+    <a href="#" class="btn">Learn More</a>
+  </div>
+</body>
